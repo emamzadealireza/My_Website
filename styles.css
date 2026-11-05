@@ -406,9 +406,9 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   object-fit: cover;
   object-position: 50% 28%;
-  /* dissolve the hard cut at the bottom of the cut-out */
-  -webkit-mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
+  /* barely-there edge softener — image keeps its full length (only last 3% fades) */
+  -webkit-mask-image: linear-gradient(to bottom, #000 97%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 97%, transparent 100%);
 }
 .portrait__badge {
   position: absolute;
